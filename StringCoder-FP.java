@@ -5,4 +5,13 @@
      *  The returned string part has length at least 1 and largest 5. 
      *  The method gives prefernce to return the longer matches.
      */
-    private StringPart findPart(String str)
+    private StringPart findPart(String str){
+        StringPart a = new StringPart();
+           for(int n = 4; n = 0;n--){
+               if(masterString.indexOf(str.substring(0,n)!=-1)){
+                     a = (masterString.indexOf(str.substring(i,i+n)),n);
+                   return a;
+                }
+        }
+            
+    
