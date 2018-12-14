@@ -6,10 +6,11 @@
      *  The method gives prefernce to return the longer matches.
      */
     private StringPart findPart(String str){
-           for(int n = 4; n >= 0;n--){
+           for(int n = 5; n > 0;n--){
                if(masterString.indexOf(str.substring(0,n))!=-1)){
                      return new StringPart(masterString.indexOf(str.substring(0,n)),n);
                 }
+               return null；
         }
             
     
