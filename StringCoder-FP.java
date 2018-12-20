@@ -6,17 +6,13 @@
      *  The method gives prefernce to return the longer matches.
      */
     private StringPart findPart(String str){
-        if(str.length() < 5){
+        int m= 5;
+        if(str.length() < 5)
             m = str.lenghth();
-            }
-        else{
-            m = 5;
-            }
+          
         for(int n = m; n > 0;n--){
-               if(masterString.indexOf(str.substring(0,n))!=-1)){
+               if(masterString.indexOf(str.substring(0,n))!=-1))
                      return new StringPart(masterString.indexOf(str.substring(0,n)),n);
-                }
-               return null；
         }
-            
-    
+              return null;
+    }
